@@ -12,7 +12,7 @@ The goal of this project was to:
 - Support sampling-based text generation (instead of greedy decoding)
 - Conduct experimentation with tokenization, training loops, and model evaluation
 
-Our decoder-only model is trained to predict the next token in a sequence. It contains around 674,881 parameters, including token embeddings, multi-head self-attention layers, feedforward networks, and layer normalization components—making it compact yet expressive enough for experimentation.
+Our decoder-only model is trained to predict the next token in a sequence. It contains around 674,881 parameters, including token embeddings, multi-head self-attention layers, feedforward networks, and layer normalization components—making it compact yet expressive enough for experimentation. To run the model simply run the test file "python test_trainer_decoder_shakespeare.py" in the root folder. You can change the prompt also in the same file (line 96).
 
 ---
 

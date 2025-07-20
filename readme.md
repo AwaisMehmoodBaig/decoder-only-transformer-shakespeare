@@ -1,6 +1,6 @@
-# Decoder-Only Language Model (80M Parameters)
+# Decoder-Only Language Model (600k Parameters)
 
-This project implements a custom decoder-only transformer language model in PyTorch. It is inspired by models like GPT, built from scratch for deep understanding and experimentation. The model supports sampling-based generation strategies such as **top-k**, **top-p (nucleus)** sampling with temperature scaling.
+This project implements a custom decoder-only transformer language model in PyTorch, trained with a small dataset (Tiny Shakespeare) on a CPU. It is inspired by models like GPT, built from scratch for deep understanding and experimentation. The model supports sampling-based generation strategies such as **top-k**, **top-p (nucleus)** sampling with temperature scaling.
 
 ---
 

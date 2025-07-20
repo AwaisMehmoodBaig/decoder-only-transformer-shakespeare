@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pth
+decoder_model.pth
+*.log
+.env
+.DS_Store
+.idea/
+.vscode/

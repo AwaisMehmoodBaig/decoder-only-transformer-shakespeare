@@ -30,7 +30,7 @@ Our decoder-only model is trained to predict the next token in a sequence. It co
 
 ## 🧪 Test File Design
 
-The `test_model.py` file was carefully crafted to:
+The `test_trainer_decoder_shakespeare` file was carefully crafted to:
 - Load the model checkpoint
 - Evaluate generation under **sampling conditions** (not greedy)
 - Use a fixed prompt for consistent comparisons

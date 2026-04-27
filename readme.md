@@ -50,7 +50,7 @@ Unlike traditional greedy decoding, we implemented **sampling-based generation**
 - Top-p (nucleus) sampling, which dynamically selects the smallest set of tokens whose cumulative probability exceeds a threshold p.
 - These techniques allow the model to generate more natural, varied responses while maintaining relevance.
 
-## 🐛 Issues Faced
+##  Issues Faced
 
 - Tokenizer loading errors due to incorrect paths or missing files.
 - High memory usage during model generation on CPU environments.

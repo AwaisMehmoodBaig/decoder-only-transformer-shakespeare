@@ -4,7 +4,7 @@ This project implements a custom decoder-only transformer language model in PyTo
 
 ---
 
-## 🚀 Overview
+## Overview
 
 The goal of this project was to:
 - Build a language model from scratch using PyTorch
@@ -16,7 +16,7 @@ Our decoder-only model is trained to predict the next token in a sequence. It co
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
 - **Token + Positional Embedding**
 - **N Layers** of:
@@ -28,7 +28,7 @@ Our decoder-only model is trained to predict the next token in a sequence. It co
 
 ---
 
-## 🧪 Test File Design
+##  Test File Design
 
 The `test_trainer_decoder_shakespeare` file was carefully crafted to:
 - Load the model checkpoint
@@ -40,7 +40,7 @@ This design allows us to test creativity vs reliability of generation under vary
 
 ---
 
-## 🎲 Sampling Techniques Implemented
+##  Sampling Techniques Implemented
 
 Unlike traditional greedy decoding, we implemented **sampling-based generation**:
 
@@ -60,7 +60,7 @@ Unlike traditional greedy decoding, we implemented **sampling-based generation**
 - Sampling logic errors: top_p and top_k clashed or misbehaved if both were used.
 - Slow generation speed with large input sequence lengths.
 
-## ✅ Issues Resolved
+##  Issues Resolved
 
 - Corrected the tokenizer paths and ensured all necessary files (tokenizer.json, tokenizer_config.json, vocab.json) were present.
 - Optimized generation loop with @torch.no_grad() and in-place masking to improve speed and reduce memory load.
@@ -69,7 +69,7 @@ Unlike traditional greedy decoding, we implemented **sampling-based generation**
 - Implemented consistent sampling fallback (softmax + multinomial) for unpredictable token logits.
 - Validated outputs using controlled temperature and seeds to verify randomness wasn't affecting logic.
 
-## 🚧 Future Work
+## Future Work
 
 - Benchmark and compare decoding strategies (greedy, beam search, top-k, top-p) on BLEU / ROUGE scores.
 - Add support for configurable repetition penalties and EOS token conditioning.
